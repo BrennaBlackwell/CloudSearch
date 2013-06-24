@@ -1,0 +1,306 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8A7EBB751777EFB8003C2B77 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A7EBB741777EFB8003C2B77 /* UIKit.framework */; };
+		8A7EBB771777EFB8003C2B77 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A7EBB761777EFB8003C2B77 /* Foundation.framework */; };
+		8A7EBB791777EFB8003C2B77 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A7EBB781777EFB8003C2B77 /* CoreGraphics.framework */; };
+		8A7EBB7F1777EFB8003C2B77 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8A7EBB7D1777EFB8003C2B77 /* InfoPlist.strings */; };
+		8A7EBB811777EFB8003C2B77 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7EBB801777EFB8003C2B77 /* main.m */; };
+		8A7EBB851777EFB8003C2B77 /* CloudSearchAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7EBB841777EFB8003C2B77 /* CloudSearchAppDelegate.m */; };
+		8A7EBB871777EFB8003C2B77 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A7EBB861777EFB8003C2B77 /* Default.png */; };
+		8A7EBB891777EFB8003C2B77 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A7EBB881777EFB8003C2B77 /* Default@2x.png */; };
+		8A7EBB8B1777EFB8003C2B77 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A7EBB8A1777EFB8003C2B77 /* Default-568h@2x.png */; };
+		8A7EBB8E1777EFB8003C2B77 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A7EBB8C1777EFB8003C2B77 /* MainStoryboard.storyboard */; };
+		8A7EBB911777EFB8003C2B77 /* CloudSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7EBB901777EFB8003C2B77 /* CloudSearchViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8A7EBB711777EFB8003C2B77 /* CloudSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A7EBB741777EFB8003C2B77 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8A7EBB761777EFB8003C2B77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8A7EBB781777EFB8003C2B77 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8A7EBB7C1777EFB8003C2B77 /* CloudSearch-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CloudSearch-Info.plist"; sourceTree = "<group>"; };
+		8A7EBB7E1777EFB8003C2B77 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8A7EBB801777EFB8003C2B77 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8A7EBB821777EFB8003C2B77 /* CloudSearch-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CloudSearch-Prefix.pch"; sourceTree = "<group>"; };
+		8A7EBB831777EFB8003C2B77 /* CloudSearchAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CloudSearchAppDelegate.h; sourceTree = "<group>"; };
+		8A7EBB841777EFB8003C2B77 /* CloudSearchAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CloudSearchAppDelegate.m; sourceTree = "<group>"; };
+		8A7EBB861777EFB8003C2B77 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		8A7EBB881777EFB8003C2B77 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		8A7EBB8A1777EFB8003C2B77 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		8A7EBB8D1777EFB8003C2B77 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		8A7EBB8F1777EFB8003C2B77 /* CloudSearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CloudSearchViewController.h; sourceTree = "<group>"; };
+		8A7EBB901777EFB8003C2B77 /* CloudSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CloudSearchViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8A7EBB6E1777EFB8003C2B77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A7EBB751777EFB8003C2B77 /* UIKit.framework in Frameworks */,
+				8A7EBB771777EFB8003C2B77 /* Foundation.framework in Frameworks */,
+				8A7EBB791777EFB8003C2B77 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8A7EBB681777EFB8003C2B77 = {
+			isa = PBXGroup;
+			children = (
+				8A7EBB7A1777EFB8003C2B77 /* CloudSearch */,
+				8A7EBB731777EFB8003C2B77 /* Frameworks */,
+				8A7EBB721777EFB8003C2B77 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8A7EBB721777EFB8003C2B77 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8A7EBB711777EFB8003C2B77 /* CloudSearch.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8A7EBB731777EFB8003C2B77 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A7EBB741777EFB8003C2B77 /* UIKit.framework */,
+				8A7EBB761777EFB8003C2B77 /* Foundation.framework */,
+				8A7EBB781777EFB8003C2B77 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8A7EBB7A1777EFB8003C2B77 /* CloudSearch */ = {
+			isa = PBXGroup;
+			children = (
+				8A7EBB831777EFB8003C2B77 /* CloudSearchAppDelegate.h */,
+				8A7EBB841777EFB8003C2B77 /* CloudSearchAppDelegate.m */,
+				8A7EBB8C1777EFB8003C2B77 /* MainStoryboard.storyboard */,
+				8A7EBB8F1777EFB8003C2B77 /* CloudSearchViewController.h */,
+				8A7EBB901777EFB8003C2B77 /* CloudSearchViewController.m */,
+				8A7EBB7B1777EFB8003C2B77 /* Supporting Files */,
+			);
+			path = CloudSearch;
+			sourceTree = "<group>";
+		};
+		8A7EBB7B1777EFB8003C2B77 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8A7EBB7C1777EFB8003C2B77 /* CloudSearch-Info.plist */,
+				8A7EBB7D1777EFB8003C2B77 /* InfoPlist.strings */,
+				8A7EBB801777EFB8003C2B77 /* main.m */,
+				8A7EBB821777EFB8003C2B77 /* CloudSearch-Prefix.pch */,
+				8A7EBB861777EFB8003C2B77 /* Default.png */,
+				8A7EBB881777EFB8003C2B77 /* Default@2x.png */,
+				8A7EBB8A1777EFB8003C2B77 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8A7EBB701777EFB8003C2B77 /* CloudSearch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A7EBB941777EFB8003C2B77 /* Build configuration list for PBXNativeTarget "CloudSearch" */;
+			buildPhases = (
+				8A7EBB6D1777EFB8003C2B77 /* Sources */,
+				8A7EBB6E1777EFB8003C2B77 /* Frameworks */,
+				8A7EBB6F1777EFB8003C2B77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CloudSearch;
+			productName = CloudSearch;
+			productReference = 8A7EBB711777EFB8003C2B77 /* CloudSearch.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8A7EBB691777EFB8003C2B77 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CloudSearch;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = brennablackwell.com;
+			};
+			buildConfigurationList = 8A7EBB6C1777EFB8003C2B77 /* Build configuration list for PBXProject "CloudSearch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8A7EBB681777EFB8003C2B77;
+			productRefGroup = 8A7EBB721777EFB8003C2B77 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8A7EBB701777EFB8003C2B77 /* CloudSearch */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8A7EBB6F1777EFB8003C2B77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A7EBB7F1777EFB8003C2B77 /* InfoPlist.strings in Resources */,
+				8A7EBB871777EFB8003C2B77 /* Default.png in Resources */,
+				8A7EBB891777EFB8003C2B77 /* Default@2x.png in Resources */,
+				8A7EBB8B1777EFB8003C2B77 /* Default-568h@2x.png in Resources */,
+				8A7EBB8E1777EFB8003C2B77 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8A7EBB6D1777EFB8003C2B77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A7EBB811777EFB8003C2B77 /* main.m in Sources */,
+				8A7EBB851777EFB8003C2B77 /* CloudSearchAppDelegate.m in Sources */,
+				8A7EBB911777EFB8003C2B77 /* CloudSearchViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8A7EBB7D1777EFB8003C2B77 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A7EBB7E1777EFB8003C2B77 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8A7EBB8C1777EFB8003C2B77 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A7EBB8D1777EFB8003C2B77 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8A7EBB921777EFB8003C2B77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8A7EBB931777EFB8003C2B77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8A7EBB951777EFB8003C2B77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CloudSearch/CloudSearch-Prefix.pch";
+				INFOPLIST_FILE = "CloudSearch/CloudSearch-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8A7EBB961777EFB8003C2B77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CloudSearch/CloudSearch-Prefix.pch";
+				INFOPLIST_FILE = "CloudSearch/CloudSearch-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8A7EBB6C1777EFB8003C2B77 /* Build configuration list for PBXProject "CloudSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A7EBB921777EFB8003C2B77 /* Debug */,
+				8A7EBB931777EFB8003C2B77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A7EBB941777EFB8003C2B77 /* Build configuration list for PBXNativeTarget "CloudSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A7EBB951777EFB8003C2B77 /* Debug */,
+				8A7EBB961777EFB8003C2B77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8A7EBB691777EFB8003C2B77 /* Project object */;
+}
