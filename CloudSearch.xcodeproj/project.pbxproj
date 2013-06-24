@@ -17,7 +17,17 @@
 		8A7EBB891777EFB8003C2B77 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A7EBB881777EFB8003C2B77 /* Default@2x.png */; };
 		8A7EBB8B1777EFB8003C2B77 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A7EBB8A1777EFB8003C2B77 /* Default-568h@2x.png */; };
 		8A7EBB8E1777EFB8003C2B77 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A7EBB8C1777EFB8003C2B77 /* MainStoryboard.storyboard */; };
-		8A7EBB911777EFB8003C2B77 /* CloudSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7EBB901777EFB8003C2B77 /* CloudSearchViewController.m */; };
+		8A7EBB991777F009003C2B77 /* CloudTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7EBB981777F009003C2B77 /* CloudTableViewController.m */; };
+		8A7EBBA61777F028003C2B77 /* Cloud.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7EBBA31777F028003C2B77 /* Cloud.m */; };
+		8A7EBBA71777F028003C2B77 /* CloudCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7EBBA51777F028003C2B77 /* CloudCell.m */; };
+		8A7EBBAC1777F035003C2B77 /* AltocumulusCastellanus.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8A7EBBA81777F035003C2B77 /* AltocumulusCastellanus.jpg */; };
+		8A7EBBAD1777F035003C2B77 /* CirrocumulusStratiformus.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 8A7EBBA91777F035003C2B77 /* CirrocumulusStratiformus.JPG */; };
+		8A7EBBAE1777F035003C2B77 /* CirrostratusNebulosus.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8A7EBBAA1777F035003C2B77 /* CirrostratusNebulosus.jpg */; };
+		8A7EBBAF1777F035003C2B77 /* CirrusUncinus.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8A7EBBAB1777F035003C2B77 /* CirrusUncinus.jpg */; };
+		8A7EBBB31777F03F003C2B77 /* Nacreous.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 8A7EBBB01777F03F003C2B77 /* Nacreous.JPG */; };
+		8A7EBBB41777F03F003C2B77 /* Noctilucent.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8A7EBBB11777F03F003C2B77 /* Noctilucent.jpg */; };
+		8A7EBBB51777F03F003C2B77 /* StratocumulusLenticularis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8A7EBBB21777F03F003C2B77 /* StratocumulusLenticularis.jpg */; };
+		8A7EBBB81777F047003C2B77 /* CloudDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7EBBB71777F047003C2B77 /* CloudDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,8 +45,21 @@
 		8A7EBB881777EFB8003C2B77 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		8A7EBB8A1777EFB8003C2B77 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		8A7EBB8D1777EFB8003C2B77 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		8A7EBB8F1777EFB8003C2B77 /* CloudSearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CloudSearchViewController.h; sourceTree = "<group>"; };
-		8A7EBB901777EFB8003C2B77 /* CloudSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CloudSearchViewController.m; sourceTree = "<group>"; };
+		8A7EBB971777F009003C2B77 /* CloudTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CloudTableViewController.h; sourceTree = "<group>"; };
+		8A7EBB981777F009003C2B77 /* CloudTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CloudTableViewController.m; sourceTree = "<group>"; };
+		8A7EBBA21777F028003C2B77 /* Cloud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cloud.h; sourceTree = "<group>"; };
+		8A7EBBA31777F028003C2B77 /* Cloud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cloud.m; sourceTree = "<group>"; };
+		8A7EBBA41777F028003C2B77 /* CloudCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CloudCell.h; sourceTree = "<group>"; };
+		8A7EBBA51777F028003C2B77 /* CloudCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CloudCell.m; sourceTree = "<group>"; };
+		8A7EBBA81777F035003C2B77 /* AltocumulusCastellanus.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = AltocumulusCastellanus.jpg; sourceTree = "<group>"; };
+		8A7EBBA91777F035003C2B77 /* CirrocumulusStratiformus.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CirrocumulusStratiformus.JPG; sourceTree = "<group>"; };
+		8A7EBBAA1777F035003C2B77 /* CirrostratusNebulosus.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CirrostratusNebulosus.jpg; sourceTree = "<group>"; };
+		8A7EBBAB1777F035003C2B77 /* CirrusUncinus.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CirrusUncinus.jpg; sourceTree = "<group>"; };
+		8A7EBBB01777F03F003C2B77 /* Nacreous.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Nacreous.JPG; sourceTree = "<group>"; };
+		8A7EBBB11777F03F003C2B77 /* Noctilucent.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Noctilucent.jpg; sourceTree = "<group>"; };
+		8A7EBBB21777F03F003C2B77 /* StratocumulusLenticularis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = StratocumulusLenticularis.jpg; sourceTree = "<group>"; };
+		8A7EBBB61777F047003C2B77 /* CloudDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CloudDetailViewController.h; sourceTree = "<group>"; };
+		8A7EBBB71777F047003C2B77 /* CloudDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CloudDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,9 +108,15 @@
 			children = (
 				8A7EBB831777EFB8003C2B77 /* CloudSearchAppDelegate.h */,
 				8A7EBB841777EFB8003C2B77 /* CloudSearchAppDelegate.m */,
+				8A7EBBA21777F028003C2B77 /* Cloud.h */,
+				8A7EBBA31777F028003C2B77 /* Cloud.m */,
+				8A7EBBA41777F028003C2B77 /* CloudCell.h */,
+				8A7EBBA51777F028003C2B77 /* CloudCell.m */,
 				8A7EBB8C1777EFB8003C2B77 /* MainStoryboard.storyboard */,
-				8A7EBB8F1777EFB8003C2B77 /* CloudSearchViewController.h */,
-				8A7EBB901777EFB8003C2B77 /* CloudSearchViewController.m */,
+				8A7EBB971777F009003C2B77 /* CloudTableViewController.h */,
+				8A7EBB981777F009003C2B77 /* CloudTableViewController.m */,
+				8A7EBBB61777F047003C2B77 /* CloudDetailViewController.h */,
+				8A7EBBB71777F047003C2B77 /* CloudDetailViewController.m */,
 				8A7EBB7B1777EFB8003C2B77 /* Supporting Files */,
 			);
 			path = CloudSearch;
@@ -96,6 +125,13 @@
 		8A7EBB7B1777EFB8003C2B77 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8A7EBBB01777F03F003C2B77 /* Nacreous.JPG */,
+				8A7EBBB11777F03F003C2B77 /* Noctilucent.jpg */,
+				8A7EBBB21777F03F003C2B77 /* StratocumulusLenticularis.jpg */,
+				8A7EBBA81777F035003C2B77 /* AltocumulusCastellanus.jpg */,
+				8A7EBBA91777F035003C2B77 /* CirrocumulusStratiformus.JPG */,
+				8A7EBBAA1777F035003C2B77 /* CirrostratusNebulosus.jpg */,
+				8A7EBBAB1777F035003C2B77 /* CirrusUncinus.jpg */,
 				8A7EBB7C1777EFB8003C2B77 /* CloudSearch-Info.plist */,
 				8A7EBB7D1777EFB8003C2B77 /* InfoPlist.strings */,
 				8A7EBB801777EFB8003C2B77 /* main.m */,
@@ -164,6 +200,13 @@
 				8A7EBB891777EFB8003C2B77 /* Default@2x.png in Resources */,
 				8A7EBB8B1777EFB8003C2B77 /* Default-568h@2x.png in Resources */,
 				8A7EBB8E1777EFB8003C2B77 /* MainStoryboard.storyboard in Resources */,
+				8A7EBBAC1777F035003C2B77 /* AltocumulusCastellanus.jpg in Resources */,
+				8A7EBBAD1777F035003C2B77 /* CirrocumulusStratiformus.JPG in Resources */,
+				8A7EBBAE1777F035003C2B77 /* CirrostratusNebulosus.jpg in Resources */,
+				8A7EBBAF1777F035003C2B77 /* CirrusUncinus.jpg in Resources */,
+				8A7EBBB31777F03F003C2B77 /* Nacreous.JPG in Resources */,
+				8A7EBBB41777F03F003C2B77 /* Noctilucent.jpg in Resources */,
+				8A7EBBB51777F03F003C2B77 /* StratocumulusLenticularis.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,7 +219,10 @@
 			files = (
 				8A7EBB811777EFB8003C2B77 /* main.m in Sources */,
 				8A7EBB851777EFB8003C2B77 /* CloudSearchAppDelegate.m in Sources */,
-				8A7EBB911777EFB8003C2B77 /* CloudSearchViewController.m in Sources */,
+				8A7EBB991777F009003C2B77 /* CloudTableViewController.m in Sources */,
+				8A7EBBA61777F028003C2B77 /* Cloud.m in Sources */,
+				8A7EBBA71777F028003C2B77 /* CloudCell.m in Sources */,
+				8A7EBBB81777F047003C2B77 /* CloudDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +345,7 @@
 				8A7EBB961777EFB8003C2B77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,23 +1,25 @@
 //
-//  CloudSearchViewController.m
+//  CloudDetailViewController.m
 //  CloudSearch
 //
 //  Created by Brenna on 6/23/13.
 //  Copyright (c) 2013 brennablackwell.com. All rights reserved.
 //
 
-#import "CloudSearchViewController.h"
+#import "CloudDetailViewController.h"
 
-@interface CloudSearchViewController ()
+@interface CloudDetailViewController ()
 
 @end
 
-@implementation CloudSearchViewController
+@implementation CloudDetailViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
+    _cloudImageView.image = [UIImage imageNamed:_imageFile];
+    _informationTextView.text = _information;
 }
 
 - (void)didReceiveMemoryWarning

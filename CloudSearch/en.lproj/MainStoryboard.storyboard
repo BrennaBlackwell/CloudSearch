@@ -1,26 +1,186 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2519" systemVersion="12A206j" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11G63" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Tgu-z5-Nu2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1856"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
-        <scene sceneID="5">
+        <!--Cloud Table View Controller - Clouds-->
+        <scene sceneID="Yzi-5Y-hNa">
             <objects>
-                <viewController id="2" customClass="CloudSearchViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="3">
+                <tableViewController id="jGW-fO-ZV0" customClass="CloudTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="80" sectionHeaderHeight="22" sectionFooterHeight="22" id="QSW-Db-EYp">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="W74-ZN-5F8">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="jGW-fO-ZV0" id="v8u-hH-g0E"/>
+                            </connections>
+                        </searchBar>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CloudCell" rowHeight="80" id="KX1-fN-JmD" customClass="CloudCell">
+                                <rect key="frame" x="0.0" y="66" width="320" height="80"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="79"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="76d-jQ-Jw6">
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="79" id="9h3-te-GhH"/>
+                                                <constraint firstAttribute="width" constant="99" id="mqR-I2-m6B"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="173" translatesAutoresizingMaskIntoConstraints="NO" id="pPL-c3-hA6">
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="173" id="Yam-9w-r2Q"/>
+                                                <constraint firstAttribute="height" constant="42" id="kPI-cV-pyn"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cOr-yh-q6f">
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="113" id="QLl-fB-D0v"/>
+                                                <constraint firstAttribute="height" constant="21" id="nje-73-aN1"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="cOr-yh-q6f" firstAttribute="centerX" secondItem="pPL-c3-hA6" secondAttribute="centerX" type="default" id="Ayt-38-krN"/>
+                                    <constraint firstItem="76d-jQ-Jw6" firstAttribute="top" secondItem="KX1-fN-JmD" secondAttribute="top" type="default" id="CSt-fy-onu"/>
+                                    <constraint firstItem="76d-jQ-Jw6" firstAttribute="leading" secondItem="KX1-fN-JmD" secondAttribute="leading" type="default" id="eiO-yx-w7P"/>
+                                    <constraint firstAttribute="bottom" secondItem="cOr-yh-q6f" secondAttribute="bottom" constant="10" id="ibp-Fq-HF7"/>
+                                    <constraint firstItem="pPL-c3-hA6" firstAttribute="top" secondItem="KX1-fN-JmD" secondAttribute="top" constant="8" id="jCA-B3-xsg"/>
+                                    <constraint firstItem="pPL-c3-hA6" firstAttribute="leading" secondItem="76d-jQ-Jw6" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="uuJ-CV-ebw"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="classificationLabel" destination="cOr-yh-q6f" id="W2Q-gJ-qeE"/>
+                                    <outlet property="cloudImage" destination="76d-jQ-Jw6" id="Sub-zF-CB0"/>
+                                    <outlet property="nameLabel" destination="pPL-c3-hA6" id="E7D-ww-Zbq"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="jGW-fO-ZV0" id="wYp-vW-jMM"/>
+                            <outlet property="delegate" destination="jGW-fO-ZV0" id="PhE-36-U1V"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Clouds" id="In7-e2-XF7"/>
+                    <connections>
+                        <outlet property="cloudSearch" destination="W74-ZN-5F8" id="S7c-0O-ssZ"/>
+                        <outlet property="searchDisplayController" destination="9VW-NH-GDH" id="W36-nw-Rlg"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eJA-5N-yep" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="9VW-NH-GDH">
+                    <connections>
+                        <outlet property="delegate" destination="jGW-fO-ZV0" id="7qb-OV-EcI"/>
+                        <outlet property="searchBar" destination="W74-ZN-5F8" id="Xd7-XF-KY5"/>
+                        <outlet property="searchContentsController" destination="jGW-fO-ZV0" id="iib-cE-Iar"/>
+                        <outlet property="searchResultsDataSource" destination="jGW-fO-ZV0" id="Ksz-6h-kb8"/>
+                        <outlet property="searchResultsDelegate" destination="jGW-fO-ZV0" id="AbH-sI-nlN"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="496" y="114"/>
+        </scene>
+        <!--Cloud Detail View Controller-->
+        <scene sceneID="24y-2K-LOT">
+            <objects>
+                <viewController storyboardIdentifier="CloudDetail" id="QCs-0Q-VgG" customClass="CloudDetailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MrD-iv-hnR">
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="V40-Fb-MBy">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="283" id="a0D-RP-TYS"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kuo-XM-gZQ">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="Ass-xD-Y4s"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="V40-Fb-MBy" firstAttribute="trailing" secondItem="MrD-iv-hnR" secondAttribute="trailing" type="default" id="7OW-zi-QCm"/>
+                            <constraint firstAttribute="trailing" secondItem="kuo-XM-gZQ" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="8ww-ua-inO"/>
+                            <constraint firstItem="V40-Fb-MBy" firstAttribute="top" secondItem="MrD-iv-hnR" secondAttribute="top" type="default" id="gjJ-C1-ymm"/>
+                            <constraint firstItem="V40-Fb-MBy" firstAttribute="leading" secondItem="MrD-iv-hnR" secondAttribute="leading" type="default" id="iBE-jE-R5J"/>
+                            <constraint firstItem="kuo-XM-gZQ" firstAttribute="leading" secondItem="MrD-iv-hnR" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="uQw-LK-P70"/>
+                            <constraint firstAttribute="bottom" secondItem="kuo-XM-gZQ" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="wTs-2F-aY7"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cloudImageView" destination="V40-Fb-MBy" id="5VO-4k-naK"/>
+                        <outlet property="informationTextView" destination="kuo-XM-gZQ" id="82T-Wp-wKS"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aHv-PF-0rL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="885" y="114"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="APJ-OX-gL3">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="Tgu-z5-Nu2" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ofo-Sy-1pb">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="jGW-fO-ZV0" kind="relationship" relationship="rootViewController" id="NJO-oF-Xdh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M1W-Bn-Zhe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="71" y="114"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="CloudCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CloudCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="classificationLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="cloudImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="nameLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="CloudDetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CloudDetailViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="cloudImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="informationTextView" candidateClass="UITextView"/>
+            </relationships>
+        </class>
+        <class className="CloudTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CloudTableViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="cloudSearch" candidateClass="UISearchBar"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
+        <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
 </document>
