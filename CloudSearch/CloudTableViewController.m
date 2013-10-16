@@ -105,7 +105,18 @@
 #pragma mark - Table view delegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    Cloud *cloudToSend = [cloudArray objectAtIndex:indexPath.row];
+    Cloud *cloudToSend = nil;
+    
+    if (tableView == self.searchDisplayController.searchResultsTableView)
+    {
+        cloudToSend = [filteredCloudArray objectAtIndex:indexPath.row];
+    }
+    
+    else
+    {
+        cloudToSend = [cloudArray objectAtIndex:indexPath.row];
+    }
+    
     CloudDetailViewController *newViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"CloudDetail"];
     newViewController.imageFile = cloudToSend.imageFile;
     newViewController.information = cloudToSend.information;
